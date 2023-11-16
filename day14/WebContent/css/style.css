@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+#root {
+	width: 100%;
+}
+.wrap {
+	width: 80%;
+	margin: auto;
+	border: 2px solid black;
+}
+.item {
+	display: flex;
+	align-items: center;
+}
+.item > div {
+	box-sizing: border-box;
+	border: 1px solid grey;
+	padding: 5px 10px;
+	height: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item > div:nth-child(1) { width: 15% }
+.item > div:nth-child(2) { width: 20% }
+.item > div:nth-child(3) { width: 20% }
+.item > div:nth-child(4) { width: 45% }
+
+.wrap > .item:first-child > div {
+	height: 50px;
+	background-color: #ddd;
+	font-weight: bold;
+}
